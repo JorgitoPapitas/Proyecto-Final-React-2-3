@@ -1,0 +1,391 @@
+/* Fondo y tipografía global */
+body {
+  background-image: url('/Logodeclash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%; 
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* Asegura que el contenido principal ocupe el espacio restante */
+main {
+  flex-grow: 1; 
+  padding-top: 80px; 
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9); 
+}
+
+.desplegable {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.barras {
+  display: none;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Navegación */
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  display: block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+  background: #2f0274;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.5);
+  position: relative; 
+  margin-top: 20px; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Sección de Juegos */
+.juegos-section {
+  padding: 60px 80px; 
+  text-align: center;
+  color: white;
+}
+
+.juegos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.juego {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.image-placeholder {
+  height: 150px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.juego-imagen {
+  width: 100%;
+  height: auto;
+  max-width: 200px; 
+  object-fit: cover; 
+}
+
+.juego p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Sección de Registro */
+.registro-section {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.registro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.registro-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.registro-form {
+  background: rgba(67, 127, 148, 0.701);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registro-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.registro-form label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.registro-form input {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.registro-form button {
+  background: #a93416;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.registro-form button:hover {
+  background: #450d99;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para la sección de Carreras */
+.carreras-section {
+  padding: 80px 20px; 
+  text-align: center;
+  color: white;
+}
+
+.carreras-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.carreras-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.carreras-imagen {
+  width: 100%;  
+  max-width: 600px;  
+  height: auto; 
+  margin: 20px 0;  
+  border-radius: 10px; 
+}
+
+/* Estilo para el contenedor del video */
+.video-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo general para la sección de contacto */
+.contacto-section {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.contacto-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contacto-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contacto-form {
+  background: rgba(67, 127, 148, 0.701);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contacto-form label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.contacto-form button {
+  background: #a93416;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.contacto-form button:hover {
+  background: #450d99;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+
+.inicio {
+  text-align: center;
+}
+
+.inicio h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.fila-imagenes {
+  display: flex;
+  gap: 80px;
+}
+
+.imagen {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
